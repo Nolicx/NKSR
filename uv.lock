@@ -1,10 +1,16 @@
 version = 1
-revision = 3
+revision = 2
 requires-python = ">=3.10"
 resolution-markers = [
     "python_full_version >= '3.12'",
     "python_full_version == '3.11.*'",
     "python_full_version < '3.11'",
+]
+
+[manifest]
+members = [
+    "nksr",
+    "nksr-local",
 ]
 
 [[package]]
@@ -715,6 +721,7 @@ dependencies = [
     { name = "plyfile" },
     { name = "pyntcloud" },
     { name = "python-pycg", extra = ["all"] },
+    { name = "setuptools" },
     { name = "torch" },
     { name = "torch-scatter" },
     { name = "torchvision" },
@@ -730,6 +737,7 @@ requires-dist = [
     { name = "plyfile", specifier = ">=1.1.3" },
     { name = "pyntcloud", specifier = ">=0.3.1" },
     { name = "python-pycg", extras = ["all"], specifier = ">=1.0.1" },
+    { name = "setuptools", specifier = ">=68.0.0" },
     { name = "torch", specifier = "==2.7.0" },
     { name = "torch-scatter", specifier = ">=2.1.2" },
     { name = "torchvision", specifier = ">=0.22.0" },
